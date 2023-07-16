@@ -6,7 +6,7 @@ Installation
 
 To run this application on your local machine, please follow these steps:
 
-Clone this repository using the following command: [https://github.com/swastikjhacoder/employee-review-system.git](https://github.com/swastikjhacoder/employee-review-system.git)
+Clone this repository using the following command:[ [[https://github.com/swastikjhacoder/employee-review-system.git](https://github.com/swastikjhacoder/employee-review-system.git)](https://github.com/swastikjhacoder/employee-review-system.git)](https://github.com/swastikjhacoder/employee-review-system.git)
 
 Install the required dependencies using the following command: $ npm install
 
