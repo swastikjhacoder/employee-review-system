@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Review System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/layouts.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <%- style %>
+</head>
+
+<body>
+    <%- include('header') -%>
+
+
+        <main>
+            <div class="layout-main">
+                <%- body %>
+            </div>
+
+        </main>
+
+
+
+            <%- script %>
+                <script>
+
+         <% if (flash.success && flash.success.length > 0) {%>
+
+                        new Noty({
+                            theme: 'bootstrap-v4',
+                            text: '<%=flash.success%>',
+                            type: 'success',
+                            layout: 'topRight',
+                            timeout: 1500
+                        }).show();
+
+            <%}%>
+
+            <% if (flash.error && flash.error.length > 0) {%>
+
+                        new Noty({
+                            theme: 'bootstrap-v4',
+                            text: '<%=flash.error%>',
+                            type: 'error',
+                            layout: 'topRight',
+                            timeout: 1500
+                        }).show();
+    
+                <%}%>
+                </script>
+
+                <script src="https://kit.fontawesome.com/4286c095cf.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/assignwork.css">
+
+<div class="main">
+    <h2>Assign Review to Employees</h2>
+    <form action="/review/createReview" method="post">
+        <div class="user-box">
+            <label for="recipient">Recipient : </label>
+            <select name="recipient" id="recipient">
+                <%for(let user of users){%>
+                    <option value="<%=user.id%>"><%=user.name%></option>
+                <%}%>            
+            </select>
+        </div>
+        <div class="user-box">       
+            <label for="reviewer">Reviewer : </label>
+            <select name="reviewer" id="Reviewer">
+                <%for(let user of users){%>
+                    <option value="<%=user.id%>"><%=user.name%></option>
+                <%}%>            
+            </select>
+        </div>
+        <div class="user-box">
+            <a href="#">
+                <input type="submit" value="Submit">
+            </a>
+        </div>
+    </form>
+</div>

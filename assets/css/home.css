@@ -1,0 +1,124 @@
+.home {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 20px;
+}
+.assigned-review {
+  text-align: left;
+  margin: auto;
+  margin-top: 5%;
+  width: 100%;
+  min-height: 30vh;
+  height: auto;
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 10px; 
+  box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+}
+.assigned-review h2 {
+  color: #224957;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+.assigned-review .assign-form form .user-box {
+  position: relative; 
+}
+.assigned-review .assign-form form .user-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #224957;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #224957;
+  outline: none;
+  background: transparent;
+  resize: none;
+}
+.assigned-review .assign-form form .user-box textarea:focus ~ label, .assigned-review .assign-form form .user-box textarea:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #224957;
+  font-size: 12px; 
+}
+.assigned-review .assign-form form .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #224957;
+  pointer-events: none;
+  transition: .5s; 
+}
+.assigned-review .assign-form form .user-box input[type="submit"] {
+  color: #fff;
+  font-size: 18px;
+  padding: 0.75rem 0;
+  transition: all .3s ease-in-out;
+  width: 100%;
+  letter-spacing: 1px;
+  background: #224957;
+  border: 1px solid #224957;
+  border-radius: 6px;
+}
+.assigned-review .assign-form form .user-box input[type="submit"]:hover {
+  color: #224957;
+  background: #fff;
+  cursor: pointer;
+}
+.my-review {
+  text-align: left;
+  margin: auto;
+  margin-top: 5%;
+  width: 100%;
+  min-height: 30vh;
+  height: auto;
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 10px; 
+  box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+}
+.my-review h2 {
+  color: #224957;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+.my-review .my-review-details {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 15px;
+}
+.my-review-details div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(238, 238, 238);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.my-review-details div:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+p, i, b {
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+b {
+  align-self: flex-end;
+}

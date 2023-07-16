@@ -1,0 +1,25 @@
+<header>
+    <div class="header">
+        <div>
+            <h1>Employee Review System</h1>
+        </div>
+        <div>
+            <ul>
+                <% if(locals.user){%>
+                    <%if(locals.user.permission=='admin'){%>
+                    <li><a href="/"><i class='bx bx-home' ></i></a></li>
+                    <li><a href="/review/assignWork"><i class='bx bxs-briefcase'></i></a></li>
+                    <li><a href="/employee/home"><i class='bx bx-user'></i></a></li>
+                    <li><a href="/users/Signup"><i class='bx bx-user-plus'></i></a></li>
+                    <%}%>
+                    <li>Welcome <%=user.name%></li>
+                    <li><a href="/users/Signout"><i class='bx bx-exit'></i></a></li>
+                    <% }else{%>
+                        <li><a href="/users/Signin">Sign In</a></li>
+                        <li><a href="/users/Signup">Sign UP</a></li>
+                    <%}%>
+            </ul>
+        </div>
+    </div>
+
+</header>

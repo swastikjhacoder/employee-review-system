@@ -1,0 +1,77 @@
+.main {
+  margin: auto;
+  margin-top: 5%;
+  width: 95%;
+  min-height: 30vh;
+  height: auto;
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 10px; 
+  box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+}
+.main h2 {
+  color: #224957;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.main form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.main form .user-box {
+  position: relative;
+  display: flex;
+}
+.main form .user-box input {
+  width: 200px;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-left: 15px;
+  letter-spacing: 1px;
+  color: #224957;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #224957;
+  outline: none;
+  background: transparent; 
+}
+.main form .user-box input:focus ~ label, .main form .user-box input:valid ~ label, .main form .user-box input:disabled ~ label  {
+  top: -20px;
+  left: 10px;
+  color: #224957;
+  font-size: 12px; 
+}
+.main form .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #224957;
+  pointer-events: none;
+  transition: .5s; 
+}
+.main form button,
+.main form a {
+  margin: 10px 5px;
+  color: #fff;
+  font-size: 18px;
+  padding: 0.75rem 0.75rem;
+  transition: all .3s ease-in-out;
+  letter-spacing: 1px;
+  background: #224957;
+  border: 1px solid #224957;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.main form button:hover,
+.main form a:hover  {
+  color: #224957;
+  background: #fff;
+  cursor: pointer;
+}

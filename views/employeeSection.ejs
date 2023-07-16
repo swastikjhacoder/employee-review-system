@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/employeesection.css">
+<div class="main">
+    <h2>All Employees List</h2>
+    <%for(let user of users){%>
+    <form action="/employee/update/<%=user.id%>" method="POST">
+        <div class="user-box">
+            <input type="text" name="name" placeholder="Name" value="<%=user.name%>" required>
+            <label>Name</label>
+        </div>
+        <div class="user-box">
+            <input type="email" name="email" placeholder="Email" value="<%=user.email%>" required>
+            <label>Email</label>
+        </div>
+        <div class="user-box">
+            <input type="text" name="password" placeholder="Password" value="<%=user.password%>" required>
+            <label>Password</label>
+        </div>
+        <div class="user-box">
+            <input type="text" name="permission" placeholder="Role" disabled  value="<%=user.permission%>" required>
+            <label>Permission</label>
+        </div>
+        <button type="submit">Update</button>
+        <a href="/employee/delete/<%=user.id%>">Delete</a>
+        <% if (user.permission === 'admin') { %>
+            <a href="/employee/removeadmin/<%=user.id%>">Remove Admin</a>
+        <% } else { %>
+            <a href="/employee/makeadmin/<%=user.id%>">Make Admin</a>
+        <% } %>
+    </form>
+    <%}%>   
+</div>

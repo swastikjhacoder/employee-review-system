@@ -1,0 +1,46 @@
+.main {
+  margin: auto;
+  margin-top: 5%;
+  width: 30%;
+  min-height: 30vh;
+  height: auto;
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 10px; 
+  box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+}
+.main h2 {
+  color: #224957;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.main form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main form .user-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.main form .user-box input[type="submit"] {
+  color: #fff;
+  font-size: 18px;
+  padding: 0.75rem 2.75rem;
+  transition: all .3s ease-in-out;
+  width: 100%;
+  letter-spacing: 1px;
+  background: #224957;
+  border: 1px solid #224957;
+  border-radius: 6px;
+}
+.main form .user-box input[type="submit"]:hover {
+  color: #224957;
+  background: #fff;
+  cursor: pointer;
+}
